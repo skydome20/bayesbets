@@ -15,166 +15,213 @@
 .hero h1{font-family:var(--display);font-size:clamp(34px,5vw,52px);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}.hero h1 span{color:var(--green)}.hero p{font-size:16px;color:rgba(255,255,255,0.45);max-width:460px;margin:0 auto 12px;line-height:1.6}.hero .sub{font-size:13px;color:rgba(255,255,255,0.3);max-width:400px;margin:0 auto 28px}
 .btn-primary{display:inline-block;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.06em;padding:12px 32px;border-radius:6px;border:1px solid rgba(0,230,118,0.3);background:rgba(0,230,118,0.08);color:var(--green);cursor:pointer;transition:all .2s}.btn-primary:hover{background:rgba(0,230,118,0.15);box-shadow:0 0 24px rgba(0,230,118,0.15)}
 .section-title{font-family:var(--display);font-size:18px;font-weight:700;margin-bottom:16px}
-.live-card{background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:16px}.live-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)}.live-meta{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)}
-.period-title{font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px}.period-sub{font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px}.market-link{font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);margin-bottom:20px;display:block;transition:color .15s}.market-link:hover{color:var(--green)}
-.report-row{display:flex;gap:14px;align-items:flex-start;padding:12px 16px;border-radius:8px;border:1px solid transparent}.report-row.latest{background:rgba(0,230,118,0.04);border-color:rgba(0,230,118,0.12)}.report-row.best-ev{background:rgba(255,170,0,0.03);border-color:rgba(255,170,0,0.12)}
-.connector{margin-left:18px;width:2px;height:16px}.timeline-dot{margin-top:4px;flex-shrink:0;border-radius:50%}.report-content{flex:1;min-width:0}
-.report-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:6px}.tp-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:.06em}.tag{font-size:10px;font-family:var(--mono);letter-spacing:.06em}.report-price{font-family:var(--display);font-weight:700}
-.report-details{display:flex;gap:16px;font-size:13px;margin-bottom:6px;flex-wrap:wrap}.report-details .l{color:rgba(255,255,255,0.35)}.report-details .v{color:#fff;font-weight:600}
-.conf-bar{display:flex;align-items:center;gap:6px;max-width:280px;margin-bottom:8px}.conf-track{flex:1;height:4px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden}.conf-fill{height:100%;border-radius:3px}.conf-val{font-size:11px;font-weight:700;font-family:var(--mono);min-width:34px;text-align:right}
-.preview{font-size:12px;line-height:1.5;color:rgba(255,255,255,0.35);margin:4px 0 8px}
-.sig{display:inline-block;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:.04em;margin-bottom:8px}.sig-g{background:rgba(0,230,118,0.08);color:var(--green);border:1px solid rgba(0,230,118,0.15)}.sig-y{background:rgba(255,170,0,0.08);color:var(--yellow);border:1px solid rgba(255,170,0,0.15)}
-.btn{display:inline-block;padding:8px 20px;border-radius:5px;border:none;cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;transition:all .2s;text-align:center}.btn-g{background:linear-gradient(135deg,var(--green),#00c853);color:#0d0f12}.btn-g:hover{box-shadow:0 4px 16px rgba(0,230,118,0.3)}.btn-s{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.6)}.btn-s:hover{background:rgba(255,255,255,0.1)}.btn-y{background:linear-gradient(135deg,#ffaa00,#ff8f00);color:#0d0f12}.btn-y:hover{box-shadow:0 4px 16px rgba(255,170,0,0.3)}
-.evo{margin-top:24px;padding:20px;border-radius:10px;border:1px solid var(--border);background:var(--surface)}.evo-title{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,0.35);margin-bottom:14px;text-transform:uppercase}.evo-row{display:flex;gap:0;font-size:12px;font-family:var(--mono)}.evo-cell{flex:1;padding:10px;text-align:center}.evo-cell+.evo-cell{border-left:1px solid var(--border)}.evo-hint{text-align:center;margin-top:10px;font-size:11px;color:rgba(255,255,255,0.25)}
+.tp-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:.06em;justify-content:center;min-width:42px}
+.card{border-radius:10px;border:1px solid var(--border);background:var(--surface);overflow:hidden;margin-bottom:12px}
+.card-header{padding:16px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;transition:background .15s}.card-header:hover{background:rgba(255,255,255,0.02)}
+.detail-row{display:flex;align-items:center;gap:12px;padding:8px 4px;border-bottom:1px solid rgba(255,255,255,0.03);flex-wrap:wrap}
 .pricing{margin:40px 0;padding:24px;border-radius:10px;border:1px solid var(--border);background:var(--surface)}.pricing p{font-size:13px;color:rgba(255,255,255,0.4);margin:6px 0 20px}.tier{display:flex;align-items:center;gap:14px;padding:10px 14px;border-radius:6px;margin-bottom:6px}.tier-l{font-family:var(--mono);font-size:12px;font-weight:700;min-width:48px}.tier-bar{flex:1;height:3px;background:rgba(255,255,255,0.04);border-radius:2px;overflow:hidden}.tier-fill{height:100%;border-radius:2px}.tier-p{font-family:var(--display);font-size:14px;font-weight:700;min-width:56px;text-align:right}
 .method{margin:48px 0 0;padding:24px;border-radius:10px;border:1px solid var(--border);background:var(--surface)}.method p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:12px}.method p:last-child{margin-bottom:0}.method strong{color:rgba(255,255,255,0.8)}
 .footer{margin-top:56px;padding:24px 0;border-top:1px solid var(--border);text-align:center}.footer p{font-size:11px;margin-bottom:6px}.footer .b{font-family:var(--mono);color:rgba(255,255,255,0.2)}.footer .d{color:rgba(255,255,255,0.15)}
-.no-r{padding:24px;border-radius:10px;border:1px solid var(--border);background:var(--surface);text-align:center}.no-r p{font-size:13px;color:rgba(255,255,255,0.35);font-family:var(--mono)}
-@media(max-width:600px){.nav-links{gap:12px;font-size:11px}.report-header{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.nav-links{gap:12px;font-size:11px}.card-header{flex-direction:column;align-items:flex-start}.detail-row{gap:8px}}
 </style>
 </head>
 <body>
 <div class="container">
 
-<nav class="nav"><div class="nav-logo">Bayes<span>Bets</span></div><div class="nav-links"><a href="#reports">Reports</a><a href="#pricing">Pricing</a><a href="#method">Method</a></div></nav>
+<nav class="nav"><div class="nav-logo">Bayes<span>Bets</span></div><div class="nav-links"><a href="#track">Track Record</a><a href="#markets">Markets</a><a href="#pricing">Pricing</a><a href="#method">Method</a></div></nav>
 
-<section class="hero"><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-content"><div class="hero-badge"><span class="pulse-dot"></span> PREDICTION MODEL ACTIVE</div><h1>Bayes<span>Bets</span></h1><p>Bayesian-Poisson statistical reports for Polymarket prediction markets. Data-driven edges, delivered before market resolution.</p><p class="sub">The closer to resolution, the more data — and the sharper the prediction.</p><a href="#reports" class="btn-primary">VIEW REPORTS ↓</a></div></section>
+<section class="hero"><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-content"><div class="hero-badge"><span class="pulse-dot"></span> PREDICTION MODEL ACTIVE</div><h1>Bayes<span>Bets</span></h1><p>Bayesian-Poisson statistical reports for Polymarket prediction markets. Data-driven edges, delivered before market resolution.</p><p class="sub">The closer to resolution, the more data — and the sharper the prediction.</p><a href="#track" class="btn-primary">VIEW TRACK RECORD ↓</a></div></section>
 
-<section id="reports" style="margin-top:48px">
-<div class="live-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
-    <span class="live-badge" style="background:rgba(0,230,118,0.12);color:var(--green);border-color:rgba(0,230,118,0.25)">✓ SETTLED</span>
-    <span class="live-meta">Final: 99 tweets · Bracket 90–114 · 5/5 correct</span>
+<!-- ═══ TRACK RECORD (TOP) ═══ -->
+<section id="track" style="margin-top:48px">
+  <h2 class="section-title">Track Record</h2>
+
+  <!-- Overall Stats -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-bottom:24px">
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:26px;font-weight:700;color:var(--green)">100%</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">ACCURACY</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:26px;font-weight:700;color:#fff">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">REPORTS</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:26px;font-weight:700;color:var(--green)">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">CORRECT</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:26px;font-weight:700;color:#fff">1</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">MARKETS</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:26px;font-weight:700;color:var(--yellow)">+33%</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">BEST EV</div></div>
   </div>
-  <h3 class="period-title">Elon Musk # Tweets — March 5–7, 2026</h3>
-  <p class="period-sub">Polymarket Prediction Market · Market ID: MUSK-MAR5-7-2026</p>
-  <a href="https://polymarket.com/zh/event/elon-musk-of-tweets-march-5-march-7/elon-musk-of-tweets-march-5-march-7-90-114" target="_blank" class="market-link">View on Polymarket →</a>
 
-  <!-- T-5h -->
-  <div class="report-row">
-    <div class="timeline-dot" style="width:8px;height:8px;background:rgba(0,230,118,0.35)"></div>
-    <div class="report-content">
-      <div class="report-header">
-        <div style="display:flex;align-items:center;gap:8px"><span class="tp-badge" style="background:rgba(0,230,118,0.05);color:rgba(0,230,118,0.5);border:1px solid rgba(0,230,118,0.1)">T-5h</span></div>
-        <span class="report-price" style="font-size:14px;color:rgba(255,255,255,0.7)">$19.99</span>
+  <!-- Per-Timepoint Accuracy & EV -->
+  <div style="padding:20px;border-radius:10px;border:1px solid var(--border);background:var(--surface);margin-bottom:24px">
+    <div style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,0.35);margin-bottom:14px;text-transform:uppercase">Accuracy & Average EV by Timepoint</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;background:rgba(0,230,118,0.02)">
+        <span class="tp-badge" style="background:rgba(0,230,118,0.05);color:rgba(0,230,118,0.5);border:1px solid rgba(0,230,118,0.1)">T-5h</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700;min-width:55px">1/1 ✓</span>
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:70px">Avg Conf: 92%</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700">Avg EV +27%</span>
       </div>
-      <div class="sig sig-g">YES 90–114 @ 72.4¢ · 92% · EV +27%</div>
-      <div class="report-details">
-        <span><span class="l">Count </span><span class="v">97</span></span>
-        <span><span class="l">Bracket </span><span class="v">90–114</span></span>
-        <span><span class="l">Silence </span><span class="v">212 min</span></span>
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;background:rgba(255,170,0,0.03);border:1px solid rgba(255,170,0,0.08)">
+        <span class="tp-badge" style="background:rgba(255,170,0,0.1);color:var(--yellow);border:1px solid rgba(255,170,0,0.25)">⭐T-4h</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700;min-width:55px">1/1 ✓</span>
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:70px">Avg Conf: 96%</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--yellow);font-weight:700">Avg EV +33% ⭐</span>
       </div>
-      <div class="conf-bar"><div class="conf-track"><div class="conf-fill" style="width:92%;background:var(--green)"></div></div><span class="conf-val" style="color:var(--green)">92%</span></div>
-      <p class="preview">First structured snapshot. Morning burst produced 52 tweets, then complete silence in secondary window.</p>
-      <a href="https://buy.stripe.com/5kQdR29iE0mL6oo1gF3Nm02" target="_blank" class="btn btn-s">BUY — $19.99</a>
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;background:rgba(0,230,118,0.02)">
+        <span class="tp-badge" style="background:rgba(0,230,118,0.08);color:rgba(0,230,118,0.7);border:1px solid rgba(0,230,118,0.15)">T-3h</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700;min-width:55px">1/1 ✓</span>
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:70px">Avg Conf: 99.9%</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700">Avg EV +15%</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;background:rgba(0,230,118,0.02)">
+        <span class="tp-badge" style="background:rgba(255,140,0,0.08);color:#ff8c00;border:1px solid rgba(255,140,0,0.15)">T-2h</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700;min-width:55px">1/1 ✓</span>
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:70px">Avg Conf: 99.9%</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700">Avg EV +8%</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;background:rgba(0,230,118,0.02)">
+        <span class="tp-badge" style="background:rgba(255,82,82,0.08);color:#ff5252;border:1px solid rgba(255,82,82,0.15)">T-1h</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700;min-width:55px">1/1 ✓</span>
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:70px">Avg Conf: 100%</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green);font-weight:700">Avg EV +2%</span>
+      </div>
     </div>
+    <div style="text-align:center;margin-top:14px;font-size:11px;color:rgba(255,255,255,0.25)">Confidence increases closer to settlement, but best EV is typically T-5h to T-3h before market catches up.</div>
   </div>
-
-  <div class="connector" style="background:rgba(0,230,118,0.15)"></div>
-
-  <!-- T-4h ⭐ BEST EV -->
-  <div class="report-row best-ev">
-    <div class="timeline-dot" style="width:12px;height:12px;background:var(--yellow);box-shadow:0 0 10px rgba(255,170,0,0.4)"></div>
-    <div class="report-content">
-      <div class="report-header">
-        <div style="display:flex;align-items:center;gap:8px"><span class="tp-badge" style="background:rgba(255,170,0,0.1);color:var(--yellow);border:1px solid rgba(255,170,0,0.25)">⭐ T-4h</span><span class="tag" style="color:var(--yellow)">BEST EV ENTRY</span></div>
-        <span class="report-price" style="font-size:16px;color:#fff">$29.99</span>
-      </div>
-      <div class="sig sig-y">PEAK: YES 90–114 @ 72.4¢ · 96% · EV +33%</div>
-      <div class="report-details">
-        <span><span class="l">Count </span><span class="v">97</span></span>
-        <span><span class="l">Bracket </span><span class="v">90–114</span></span>
-        <span><span class="l">Silence </span><span class="v">280 min</span></span>
-      </div>
-      <div class="conf-bar"><div class="conf-track"><div class="conf-fill" style="width:96%;background:var(--yellow)"></div></div><span class="conf-val" style="color:var(--yellow)">96%</span></div>
-      <p class="preview">Peak EV window. Required rate to hit 115 crossed historical max. 280 min silence. Smart money: 9,925 shares @ 74.3¢. Market hasn't caught up — best risk-adjusted entry.</p>
-      <a href="https://buy.stripe.com/aFa5kw66s0mL6oof7v3Nm01" target="_blank" class="btn btn-y">BUY — $29.99 ⭐ BEST VALUE</a>
-    </div>
-  </div>
-
-  <div class="connector" style="background:rgba(0,230,118,0.25)"></div>
-
-  <!-- T-3h -->
-  <div class="report-row">
-    <div class="timeline-dot" style="width:12px;height:12px;background:rgba(0,230,118,0.9);box-shadow:0 0 10px rgba(0,230,118,0.4)"></div>
-    <div class="report-content">
-      <div class="report-header">
-        <div style="display:flex;align-items:center;gap:8px"><span class="tp-badge" style="background:rgba(0,230,118,0.12);color:var(--green);border:1px solid rgba(0,230,118,0.25)">T-3h</span></div>
-        <span class="report-price" style="font-size:16px;color:#fff">$29.99</span>
-      </div>
-      <div class="sig sig-g">FINAL CALL: YES 90–114 @ 86.7¢ · 99.9% · EV +15%</div>
-      <div class="report-details">
-        <span><span class="l">Count </span><span class="v">97</span></span>
-        <span><span class="l">Bracket </span><span class="v">90–114</span></span>
-        <span><span class="l">Silence </span><span class="v">328 min</span></span>
-      </div>
-      <div class="conf-bar"><div class="conf-track"><div class="conf-fill" style="width:99.9%;background:var(--green)"></div></div><span class="conf-val" style="color:var(--green)">99.9%</span></div>
-      <p class="preview">Near-certain. 115 physically impossible — required rate exceeds historical max. All scenarios converge to 90–114.</p>
-      <a href="https://buy.stripe.com/4gMcMYbqM9Xl6oobVj3Nm00" target="_blank" class="btn btn-s">BUY — $29.99</a>
-    </div>
-  </div>
-
-  <div class="connector" style="background:rgba(0,230,118,0.3)"></div>
-
-  <!-- T-2h -->
-  <div class="report-row">
-    <div class="timeline-dot" style="width:12px;height:12px;background:rgba(0,230,118,0.95);box-shadow:0 0 12px rgba(0,230,118,0.5)"></div>
-    <div class="report-content">
-      <div class="report-header">
-        <div style="display:flex;align-items:center;gap:8px"><span class="tp-badge" style="background:rgba(255,140,0,0.12);color:#ff8c00;border:1px solid rgba(255,140,0,0.25)">T-2h</span></div>
-        <span class="report-price" style="font-size:16px;color:#fff">$39.99</span>
-      </div>
-      <div class="sig sig-g">FINAL: YES 90–114 · 99.9%+ · 115 impossible (10.36/hr needed vs 5.00 max) · EV +8%</div>
-      <div class="report-details">
-        <span><span class="l">Count </span><span class="v">97</span></span>
-        <span><span class="l">Bracket </span><span class="v">90–114</span></span>
-        <span><span class="l">Silence </span><span class="v">391 min</span></span>
-      </div>
-      <div class="conf-bar"><div class="conf-track"><div class="conf-fill" style="width:99.9%;background:var(--green)"></div></div><span class="conf-val" style="color:var(--green)">99.9%</span></div>
-      <p class="preview">Final hour report. 115–139 mathematically dead — required rate 107% above historical max. Whale position grown to 63,215 shares. Hold existing positions to settlement.</p>
-      <a href="https://buy.stripe.com/fZu8wI2Ug1qP1442kJ3Nm03" target="_blank" class="btn btn-s">BUY — $39.99</a>
-    </div>
-  </div>
-
-  <div class="connector" style="background:rgba(0,230,118,0.35)"></div>
-
-  <!-- T-1h LATEST -->
-  <div class="report-row latest">
-    <div class="timeline-dot" style="width:14px;height:14px;background:var(--green);box-shadow:0 0 14px rgba(0,230,118,0.6)"></div>
-    <div class="report-content">
-      <div class="report-header">
-        <div style="display:flex;align-items:center;gap:8px"><span class="tp-badge" style="background:rgba(255,82,82,0.12);color:#ff5252;border:1px solid rgba(255,82,82,0.25)"><span class="pulse-dot" style="width:5px;height:5px;background:#ff5252"></span> T-1h</span><span class="tag" style="color:var(--green)">LATEST · FINAL</span></div>
-        <span class="report-price" style="font-size:16px;color:#fff">$49.99</span>
-      </div>
-      <div class="sig sig-g">LOCK: 100% certainty · 98 tweets · 115 needs 18.1/hr (361% of max) · HOLD</div>
-      <div class="report-details">
-        <span><span class="l">Count </span><span class="v">98</span></span>
-        <span><span class="l">Bracket </span><span class="v">90–114</span></span>
-        <span><span class="l">Silence </span><span class="v">439 min</span></span>
-        <span><span class="l">Time Left </span><span class="v">56 min</span></span>
-      </div>
-      <div class="conf-bar"><div class="conf-track"><div class="conf-fill" style="width:100%;background:var(--green)"></div></div><span class="conf-val" style="color:var(--green)">100%</span></div>
-      <p class="preview">Pre-settlement final. +1 tweet after 439 min silence — trickle, not resumption. 115 requires 361% of historical max. Complete 5-report series with EV compression analysis. Whale position: 63,215 shares, ~$8.2K unrealized gain.</p>
-      <a href="https://buy.stripe.com/6oUcMY52o8Th7ssbVj3Nm04" target="_blank" class="btn btn-g">BUY — $49.99</a>
-    </div>
-  </div>
-</div>
 </section>
 
-<!-- EV Evolution -->
-<div class="evo">
-  <div class="evo-title">Signal Evolution — Confidence vs EV</div>
-  <div class="evo-row">
-    <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-5h</div><div style="color:var(--green);font-weight:700">92%</div><div style="color:rgba(255,255,255,0.5);font-size:11px">EV +27%</div></div>
-    <div class="evo-cell" style="background:rgba(255,170,0,0.03)"><div style="color:var(--yellow);margin-bottom:4px">⭐ T-4h</div><div style="color:var(--yellow);font-weight:700">96%</div><div style="color:var(--yellow);font-size:11px;font-weight:700">EV +33%</div></div>
-    <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-3h</div><div style="color:var(--green);font-weight:700">99.9%</div><div style="color:rgba(255,255,255,0.5);font-size:11px">EV +15%</div></div>
-    <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-2h</div><div style="color:var(--green);font-weight:700">99.9%+</div><div style="color:rgba(255,255,255,0.4);font-size:11px">EV +8%</div></div>
-    <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-1h</div><div style="color:var(--green);font-weight:700">100%</div><div style="color:rgba(255,255,255,0.4);font-size:11px">EV +2%</div></div>
-  </div>
-  <div class="evo-hint">✓ Model correct at every checkpoint. Final result: 99 tweets (90–114). 5/5 reports correct.</div>
-</div>
+<!-- ═══ MARKETS ═══ -->
+<section id="markets" style="margin-top:16px">
+  <!-- Current -->
+  <h2 class="section-title">Current Markets</h2>
 
-<!-- Pricing -->
+  <!-- Market 1: Mar 7-9 -->
+  <div style="background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:12px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> ACTIVE</span>
+      <span style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)">2-day market</span>
+    </div>
+    <h3 style="font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px">Elon Musk # Tweets — March 7–9, 2026</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px">Polymarket Prediction Market</p>
+    <a href="https://polymarket.com/zh/event/elon-musk-of-tweets-march-7-march-9" target="_blank" style="font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);display:block;margin-bottom:16px;transition:color .15s">View on Polymarket →</a>
+    <p style="font-size:12px;color:rgba(255,255,255,0.25);font-family:var(--mono);padding:12px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);text-align:center">Reports will be published as settlement approaches. Check back soon.</p>
+  </div>
+
+  <!-- Market 2: Mar 3-10 (weekly) -->
+  <div style="background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:12px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> ACTIVE</span>
+      <span style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)">7-day market</span>
+    </div>
+    <h3 style="font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px">Elon Musk # Tweets — March 3–10, 2026</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px">Polymarket Prediction Market</p>
+    <a href="https://polymarket.com/event/elon-musk-of-tweets-march-3-march-10/elon-musk-of-tweets-march-3-march-10-280-299" target="_blank" style="font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);display:block;margin-bottom:16px;transition:color .15s">View on Polymarket →</a>
+    <p style="font-size:12px;color:rgba(255,255,255,0.25);font-family:var(--mono);padding:12px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);text-align:center">Reports will be published as settlement approaches. Check back soon.</p>
+  </div>
+
+  <!-- Market 3: Mar 6-13 (weekly) -->
+  <div style="background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:12px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> ACTIVE</span>
+      <span style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)">7-day market</span>
+    </div>
+    <h3 style="font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px">Elon Musk # Tweets — March 6–13, 2026</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px">Polymarket Prediction Market</p>
+    <a href="https://polymarket.com/event/elon-musk-of-tweets-march-6-march-13" target="_blank" style="font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);display:block;margin-bottom:16px;transition:color .15s">View on Polymarket →</a>
+    <p style="font-size:12px;color:rgba(255,255,255,0.25);font-family:var(--mono);padding:12px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);text-align:center">Reports will be published as settlement approaches. Check back soon.</p>
+  </div>
+
+  <!-- Market 4: Mar 9-11 (2-day) -->
+  <div style="background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:12px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> ACTIVE</span>
+      <span style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)">2-day market</span>
+    </div>
+    <h3 style="font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px">Elon Musk # Tweets — March 9–11, 2026</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px">Polymarket Prediction Market</p>
+    <a href="https://polymarket.com/event/elon-musk-of-tweets-march-9-march-11" target="_blank" style="font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);display:block;margin-bottom:16px;transition:color .15s">View on Polymarket →</a>
+    <p style="font-size:12px;color:rgba(255,255,255,0.25);font-family:var(--mono);padding:12px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);text-align:center">Reports will be published as settlement approaches. Check back soon.</p>
+  </div>
+
+  <!-- Market 5: Mar 10-17 (weekly) -->
+  <div style="background:linear-gradient(135deg,rgba(255,170,0,0.03) 0%,rgba(0,230,118,0.02) 100%);border:1px solid rgba(255,170,0,0.15);border-radius:12px;padding:24px;margin-bottom:32px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em;background:rgba(255,170,0,0.12);color:var(--yellow);border:1px solid rgba(255,170,0,0.25);font-family:var(--mono)"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> ACTIVE</span>
+      <span style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)">7-day market</span>
+    </div>
+    <h3 style="font-family:var(--display);font-size:18px;font-weight:700;margin:12px 0 4px">Elon Musk # Tweets — March 10–17, 2026</h3>
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:6px">Polymarket Prediction Market</p>
+    <a href="https://polymarket.com/event/elon-musk-of-tweets-march-10-march-17" target="_blank" style="font-family:var(--mono);font-size:11px;color:rgba(0,230,118,0.5);display:block;margin-bottom:16px;transition:color .15s">View on Polymarket →</a>
+    <p style="font-size:12px;color:rgba(255,255,255,0.25);font-family:var(--mono);padding:12px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);text-align:center">Reports will be published as settlement approaches. Check back soon.</p>
+  </div>
+
+  <!-- Past -->
+  <h2 class="section-title">Past Markets</h2>
+
+  <!-- Elon Musk Mar 5-7 — SETTLED ✓ -->
+  <div class="card" style="border-color:rgba(0,230,118,0.12);background:rgba(0,230,118,0.015)">
+    <div class="card-header" onclick="var d=document.getElementById('m1');d.style.display=d.style.display==='none'?'block':'none';this.querySelector('.arr').style.transform=d.style.display==='none'?'rotate(0)':'rotate(180deg)'">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <span style="display:inline-block;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:.06em;background:rgba(0,230,118,0.1);color:var(--green);border:1px solid rgba(0,230,118,0.2)">5/5 ✓</span>
+        <span style="font-family:var(--display);font-size:14px;font-weight:700">Elon Musk # tweets Mar 5–7</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.5)">Result: <strong style="color:#fff">99</strong> → 90–114</span>
+        <span class="arr" style="font-size:14px;color:rgba(255,255,255,0.3);transition:transform .2s">▼</span>
+      </div>
+    </div>
+    <div id="m1" style="display:none;padding:0 20px 16px">
+      <div style="border-top:1px solid var(--border);padding-top:12px">
+
+        <!-- T-5h ✓ -->
+        <div class="detail-row">
+          <span class="tp-badge" style="background:rgba(0,230,118,0.05);color:rgba(0,230,118,0.5);border:1px solid rgba(0,230,118,0.1)">T-5h</span>
+          <span style="font-size:13px;color:rgba(255,255,255,0.5);min-width:55px">90–114</span>
+          <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:45px">92%</span>
+          <span style="font-family:var(--mono);font-size:12px;color:var(--green);min-width:65px">EV +27%</span>
+          <span style="font-size:15px;font-weight:700;color:var(--green)" title="Correct — actual 99 in 90–114">✓</span>
+        </div>
+
+        <!-- T-4h ⭐ ✓ -->
+        <div class="detail-row" style="background:rgba(255,170,0,0.02);border-radius:4px;padding:8px">
+          <span class="tp-badge" style="background:rgba(255,170,0,0.1);color:var(--yellow);border:1px solid rgba(255,170,0,0.25)">⭐T-4h</span>
+          <span style="font-size:13px;color:rgba(255,255,255,0.5);min-width:55px">90–114</span>
+          <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:45px">96%</span>
+          <span style="font-family:var(--mono);font-size:12px;color:var(--yellow);font-weight:700;min-width:65px">EV +33%</span>
+          <span style="font-size:15px;font-weight:700;color:var(--green)" title="Correct — actual 99 in 90–114">✓</span>
+        </div>
+
+        <!-- T-3h ✓ -->
+        <div class="detail-row">
+          <span class="tp-badge" style="background:rgba(0,230,118,0.08);color:rgba(0,230,118,0.7);border:1px solid rgba(0,230,118,0.15)">T-3h</span>
+          <span style="font-size:13px;color:rgba(255,255,255,0.5);min-width:55px">90–114</span>
+          <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:45px">99.9%</span>
+          <span style="font-family:var(--mono);font-size:12px;color:var(--green);min-width:65px">EV +15%</span>
+          <span style="font-size:15px;font-weight:700;color:var(--green)" title="Correct — actual 99 in 90–114">✓</span>
+        </div>
+
+        <!-- T-2h ✓ -->
+        <div class="detail-row">
+          <span class="tp-badge" style="background:rgba(255,140,0,0.08);color:#ff8c00;border:1px solid rgba(255,140,0,0.15)">T-2h</span>
+          <span style="font-size:13px;color:rgba(255,255,255,0.5);min-width:55px">90–114</span>
+          <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:45px">99.9%+</span>
+          <span style="font-family:var(--mono);font-size:12px;color:var(--green);min-width:65px">EV +8%</span>
+          <span style="font-size:15px;font-weight:700;color:var(--green)" title="Correct — actual 99 in 90–114">✓</span>
+        </div>
+
+        <!-- T-1h ✓ -->
+        <div class="detail-row" style="border-bottom:none">
+          <span class="tp-badge" style="background:rgba(255,82,82,0.08);color:#ff5252;border:1px solid rgba(255,82,82,0.15)">T-1h</span>
+          <span style="font-size:13px;color:rgba(255,255,255,0.5);min-width:55px">90–114</span>
+          <span style="font-family:var(--mono);font-size:12px;color:rgba(255,255,255,0.4);min-width:45px">100%</span>
+          <span style="font-family:var(--mono);font-size:12px;color:var(--green);min-width:65px">EV +2%</span>
+          <span style="font-size:15px;font-weight:700;color:var(--green)" title="Correct — actual 99 in 90–114">✓</span>
+        </div>
+
+        <!-- Summary -->
+        <div style="margin-top:12px;padding:10px 12px;border-radius:6px;background:rgba(0,230,118,0.03);border:1px solid rgba(0,230,118,0.08);font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.4)">
+          <span style="color:var(--green);font-weight:700">RESULT:</span> 99 tweets → bracket 90–114 · Predicted 90–114 from T-5h onward · Best entry T-4h @ EV +33% · <a href="https://polymarket.com/zh/event/elon-musk-of-tweets-march-5-march-7/elon-musk-of-tweets-march-5-march-7-90-114" target="_blank" style="color:rgba(0,230,118,0.5);text-decoration:underline">View on Polymarket →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
 <section id="pricing" class="pricing">
   <h2 class="section-title">Pricing</h2>
   <p>Reports closer to settlement incorporate more observed data. The closer, the sharper.</p>
@@ -187,17 +234,7 @@
   <div class="tier" style="background:rgba(0,230,118,0.03)"><span class="tier-l" style="color:var(--green)">T-1h</span><div class="tier-bar"><div class="tier-fill" style="width:100%;background:var(--green)"></div></div><span class="tier-p">$49.99</span></div>
 </section>
 
-<section style="margin-top:40px">
-  <h2 class="section-title">Track Record</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-bottom:16px">
-    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--green)">100%</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">ACCURACY</div></div>
-    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:#fff">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">TOTAL REPORTS</div></div>
-    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--green)">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">CORRECT</div></div>
-    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--red)">0</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">INCORRECT</div></div>
-    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:#fff">1</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">MARKETS</div></div>
-  </div>
-</section>
-
+<!-- ═══ METHODOLOGY ═══ -->
 <section id="method" class="method">
   <h2 class="section-title">Methodology</h2>
   <p>Our model uses a <strong>three-component weighted Bayesian framework</strong> (λ_prior + λ_obs + λ_recent) anchored to xtracker timestamp data. λ_recent carries 50% weight — the single most predictive variable for short-horizon forecasting.</p>
