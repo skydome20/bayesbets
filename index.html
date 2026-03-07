@@ -43,8 +43,8 @@
 <section id="reports" style="margin-top:48px">
 <div class="live-card">
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
-    <span class="live-badge"><span class="pulse-dot" style="width:5px;height:5px;background:var(--yellow)"></span> LIVE</span>
-    <span class="live-meta">Settlement: EST 12:00 / CST 01:00</span>
+    <span class="live-badge" style="background:rgba(0,230,118,0.12);color:var(--green);border-color:rgba(0,230,118,0.25)">✓ SETTLED</span>
+    <span class="live-meta">Final: 99 tweets · Bracket 90–114 · 5/5 correct</span>
   </div>
   <h3 class="period-title">Elon Musk # Tweets — March 5–7, 2026</h3>
   <p class="period-sub">Polymarket Prediction Market · Market ID: MUSK-MAR5-7-2026</p>
@@ -171,7 +171,7 @@
     <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-2h</div><div style="color:var(--green);font-weight:700">99.9%+</div><div style="color:rgba(255,255,255,0.4);font-size:11px">EV +8%</div></div>
     <div class="evo-cell"><div style="color:rgba(255,255,255,0.35);margin-bottom:4px">T-1h</div><div style="color:var(--green);font-weight:700">100%</div><div style="color:rgba(255,255,255,0.4);font-size:11px">EV +2%</div></div>
   </div>
-  <div class="evo-hint">Model correct at every checkpoint. EV peaks at T-4h (+33%) then compresses as market catches up. 56 min to settlement.</div>
+  <div class="evo-hint">✓ Model correct at every checkpoint. Final result: 99 tweets (90–114). 5/5 reports correct.</div>
 </div>
 
 <!-- Pricing -->
@@ -187,7 +187,16 @@
   <div class="tier" style="background:rgba(0,230,118,0.03)"><span class="tier-l" style="color:var(--green)">T-1h</span><div class="tier-bar"><div class="tier-fill" style="width:100%;background:var(--green)"></div></div><span class="tier-p">$49.99</span></div>
 </section>
 
-<section style="margin-top:40px"><h2 class="section-title">Past Results</h2><div class="no-r"><p>First market in progress. Results will be posted after settlement.</p></div></section>
+<section style="margin-top:40px">
+  <h2 class="section-title">Track Record</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-bottom:16px">
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--green)">100%</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">ACCURACY</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:#fff">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">TOTAL REPORTS</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--green)">5</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">CORRECT</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:var(--red)">0</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">INCORRECT</div></div>
+    <div style="background:#0d0f12;padding:18px 14px;text-align:center"><div style="font-family:var(--display);font-size:24px;font-weight:700;color:#fff">1</div><div style="font-family:var(--mono);font-size:9px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.1em">MARKETS</div></div>
+  </div>
+</section>
 
 <section id="method" class="method">
   <h2 class="section-title">Methodology</h2>
