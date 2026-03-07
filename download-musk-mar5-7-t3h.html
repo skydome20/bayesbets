@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BayesBets — Download Your Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c0f;--green:#00e676;--mono:'JetBrains Mono',monospace;--display:'Space Mono',monospace;--body:'IBM Plex Sans',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:#fff;font-family:var(--body);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden}
+.glow{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,230,118,0.08) 0%,transparent 70%);pointer-events:none}
+.card{max-width:520px;width:100%;text-align:center;position:relative;z-index:1}
+.icon{width:80px;height:80px;border-radius:50%;margin:0 auto 24px;background:rgba(0,230,118,0.1);border:2px solid rgba(0,230,118,0.3);display:flex;align-items:center;justify-content:center;animation:popIn .5s cubic-bezier(.175,.885,.32,1.275) forwards}
+@keyframes popIn{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+h1{font-family:var(--display);font-size:28px;font-weight:700;margin-bottom:8px}
+.sub{font-size:15px;color:rgba(255,255,255,0.45);margin-bottom:32px}
+.info-box{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;text-align:left;margin-bottom:24px}
+.info-box .meta{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.tp-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:.06em;background:rgba(0,230,118,0.12);color:var(--green);border:1px solid rgba(0,230,118,0.25)}
+.info-box .date{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3)}
+.info-box h3{font-family:var(--display);font-size:16px;font-weight:700;margin-bottom:16px}
+.signal-box{background:rgba(0,230,118,0.04);border:1px solid rgba(0,230,118,0.12);border-radius:8px;padding:14px;margin-bottom:16px;font-family:var(--mono);font-size:12px;color:var(--green);line-height:1.6}
+.signal-box .label{font-size:10px;letter-spacing:.1em;color:rgba(0,230,118,0.6);margin-bottom:4px}
+.includes-title{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,0.25);margin-bottom:8px}
+.includes-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:2px;font-size:13px;color:rgba(255,255,255,0.4);line-height:1.8}
+.includes-item .check{color:var(--green);flex-shrink:0;margin-top:1px}
+.dl-btn{display:block;width:100%;padding:16px 0;border-radius:8px;border:none;cursor:pointer;background:linear-gradient(135deg,#00e676,#00c853);color:#0a0c0f;font-family:var(--display);font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .2s;box-shadow:0 4px 24px rgba(0,230,118,0.25);text-align:center;text-decoration:none}
+.dl-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,230,118,0.35)}
+.dl-btn svg{vertical-align:middle;margin-right:10px}
+.tip{margin-top:16px;padding:14px 18px;border-radius:8px;background:rgba(255,170,0,0.04);border:1px solid rgba(255,170,0,0.12);font-size:12px;color:rgba(255,170,0,0.7);text-align:left;line-height:1.6}
+.tip strong{color:rgba(255,170,0,0.9)}
+.back{display:inline-block;margin-top:24px;background:none;border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:10px 24px;color:rgba(255,255,255,0.4);font-size:13px;font-family:var(--mono);cursor:pointer;transition:all .15s;text-decoration:none}
+.back:hover{border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.6)}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="card">
+  <div class="icon">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+  <h1>Payment Successful!</h1>
+  <p class="sub">Your report is ready to download.</p>
+
+  <div class="info-box">
+    <div class="meta">
+      <span class="tp-badge">T-3h</span>
+      <span class="date">March 5–7, 2026</span>
+    </div>
+    <h3>Elon Musk # Tweets Mar 5–7 · T-3h Report</h3>
+
+    <div class="signal-box">
+      <div class="label">SIGNAL</div>
+      YES 90–114 · Model Confidence 99.9% · EV +15%
+    </div>
+
+    <div class="includes-title">REPORT INCLUDES</div>
+    <div class="includes-item"><span class="check">✓</span>3-component weighted Bayesian model (λ_prior + λ_obs + λ_recent)</div>
+    <div class="includes-item"><span class="check">✓</span>Full bi-directional EV matrix across all brackets</div>
+    <div class="includes-item"><span class="check">✓</span>Signal evolution tracker (T-5 → T-4 → T-3)</div>
+    <div class="includes-item"><span class="check">✓</span>Position sizing & trade recommendations</div>
+    <div class="includes-item"><span class="check">✓</span>Risk monitoring thresholds & trigger actions</div>
+  </div>
+
+  <a href="https://drive.google.com/uc?export=download&id=1amRNZU0HcHQqWeK7EejNmVLWHPsmEI17" class="dl-btn">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download PDF Report
+  </a>
+
+  <div class="tip">
+    <strong>Tip:</strong> Bookmark this page — your download link stays active. For any issues, contact support@bayesbets.com
+  </div>
+
+  <a href="index.html" class="back">← Back to BayesBets</a>
+</div>
+</body>
+</html>
